@@ -4,7 +4,7 @@ import { getWagmiChainConfig } from "./env";
 
 const walletConnectProjectId = "4c9ee7f71f90e35661ef4c4f5f48ef55";
 
-// Define the chains to connect with
+// Define the chains to connect with added pulsechain
 const chains = [
   {
     id: 1,
