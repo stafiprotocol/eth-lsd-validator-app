@@ -11,14 +11,14 @@ const chains = [
     name: "Ethereum",
     network: "mainnet",
     nativeCurrency: { name: "ETH", symbol: "eth", decimals: 18 },
-    rpcUrls: [{ type: "default", value: `https://mainnet.infura.io/v3/${your-project-id}` }],
+    rpcUrls: [{ type: "default", value: `https://mainnet.infura.io/v3/${walletConnectProjectId}` }],
     chainId: 1
   },
   {
     id: 943,
     name: "Pulsechain Testnet V4",
-    network: "testnet",
-    nativeCurrency: { name: "PTC", symbol: "ptc", decimals: 18 },
+    network: "PulsechainTestnetV4",
+    nativeCurrency: { name: "tPLS", symbol: "tPLS", decimals: 18 },
     rpcUrls: [{ type: "default", value: "https://rpc-testnet-pulsechain.g4mm4.io" }],
     explorerUrl: "https://otter-testnet-pulsechain.g4mm4.io/",
     chainId: 943
