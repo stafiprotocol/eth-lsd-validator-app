@@ -11,7 +11,10 @@ const chains = [
     name: "Ethereum",
     network: "mainnet",
     nativeCurrency: { name: "ETH", symbol: "eth", decimals: 18 },
-    rpcUrls: { default: { http: [`https://mainnet.infura.io/v3/PutyourID`] }, public: { http: [`https://mainnet.infura.io/v3/PutyourID`] } },
+    rpcUrls: {
+      default: { http: [`https://mainnet.infura.io/v3/PutyourID`] },
+      public: { http: [`https://mainnet.infura.io/v3/PutyourID`] }
+    },
     chainId: 1
   },
   {
@@ -19,7 +22,10 @@ const chains = [
     name: "Pulsechain Testnet V4",
     network: "testnet",
     nativeCurrency: { name: "tPLS", symbol: "tPLS", decimals: 18 },
-    rpcUrls: { default: { http: ["https://rpc-testnet-pulsechain.g4mm4.io"] }, public: { http: ["https://rpc-testnet-pulsechain.g4mm4.io"] } },
+    rpcUrls: {
+      default: { http: ["https://rpc-testnet-pulsechain.g4mm4.io"] },
+      public: { http: ["https://rpc-testnet-pulsechain.g4mm4.io"] }
+    },
     explorerUrl: "https://otter-testnet-pulsechain.g4mm4.io/",
     chainId: 943
   }
