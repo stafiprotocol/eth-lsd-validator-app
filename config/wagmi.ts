@@ -31,17 +31,9 @@ const chains = [
   }
 ];
 
-let publicClient;
-
-try {
-  const result = configureChains(chains, [
-    w3mProvider({ projectId: walletConnectProjectId }),
-  ]);
-  publicClient = result.publicClient;
-  console.log("Wagmi publicClient successfully configured:", publicClient);
-} catch (error) {
-  console.error("Error configuring publicClient:", error);
-}
+const { publicClient } = configureChains(chains, [
+  w3mProvider({ projectId: walletConnectProjectId }),
+]);
 
 export const wagmiConfig = createConfig({
   autoConnect: false,
