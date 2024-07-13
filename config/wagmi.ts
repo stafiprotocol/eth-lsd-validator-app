@@ -31,7 +31,7 @@ const chains = [
   }
 ];
 
-const publicClient = configureChains(chains, [
+const { publicClient } = configureChains(chains, [
   w3mProvider({ projectId: walletConnectProjectId }),
 ]);
 
