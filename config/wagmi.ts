@@ -31,24 +31,25 @@ const chains = [
   }
 ];
 
+let publicClient;
+
 try {
-  const { publicClient } = configureChains(chains, [
+  const result = configureChains(chains, [
     w3mProvider({ projectId: walletConnectProjectId }),
   ]);
-
-  export const wagmiConfig = createConfig({
-    autoConnect: false,
-    connectors: [
-      ...w3mConnectors({
-        chains,
-        projectId: walletConnectProjectId,
-      }),
-    ],
-    publicClient,
-  });
-
-  console.log("Wagmi config successfully created:", wagmiConfig);
-
+  publicClient = result.publicClient;
+  console.log("Wagmi publicClient successfully configured:", publicClient);
 } catch (error) {
-  console.error("Error configuring Wagmi:", error);
+  console.error("Error configuring publicClient:", error);
 }
+
+export const wagmiConfig = createConfig({
+  autoConnect: false,
+  connectors: [
+    ...w3mConnectors({
+      chains,
+      projectId: walletConnectProjectId,
+    }),
+  ],
+  publicClient,
+});
