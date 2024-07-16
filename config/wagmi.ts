@@ -2,7 +2,7 @@ import { w3mConnectors, w3mProvider } from "@web3modal/ethereum";
 import { configureChains, createConfig } from "wagmi";
 import { getWagmiChainConfig } from "./env";
 
-const walletConnectProjectId = "4c9ee7f71f90e35661ef4c4f5f48ef55";
+const walletConnectProjectId = "773e240347e5c760d1cc49e512d0d86c"; // Vouch ProjectID
 
 // Define the chains to connect with pulsechain
 const chains = [
