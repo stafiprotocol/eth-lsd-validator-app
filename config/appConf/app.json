@@ -11,7 +11,7 @@
   "supportRestApi": true,
   "apr": 8.1,
   "validatorTotalDepositAmount": 32000000,
-  "trustValidatorDepositAmount": 100000,
+  "trustValidatorDepositAmount": 1000000,
   "detailedInfo": {},
   "faqList": [
     {
@@ -75,25 +75,25 @@
     },
     {
       "name": "Dune Dashboard",
-      "link": "https://dune.com/stafi-analysis/stafi"
+      "link": "https://dune.com/"
     }
   ],
   "contactList": [
     {
       "type": "Twitter",
-      "link": "https://twitter.com/Stafi_Protocol"
+      "link": "https://twitter.com/"
     },
     {
       "type": "Medium",
-      "link": "https://stafi-protocol.medium.com/"
+      "link": "https://medium.com/"
     },
     {
       "type": "Discord",
-      "link": "https://discord.com/invite/jB77etn"
+      "link": "https://discord.com/"
     },
     {
       "type": "Telegram",
-      "link": "https://t.me/stafi_protocol"
+      "link": "https://t.me/"
     }
   ],
   "tokenPriceUrl": "https://api.coingecko.com/api/v3/simple/price?ids=pulsechain&vs_currencies=usd",
