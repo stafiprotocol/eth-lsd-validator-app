@@ -27,8 +27,8 @@ import peckShieldIcon from "public/images/audit/peck_shield.svg";
 import peckShieldDarkIcon from "public/images/audit/peck_shield_dark.svg";
 import defaultAvatar from "public/images/default_avatar.png";
 import noticeIcon from "public/images/notice.png";
-import appLogo from "public/images/VouchLogoTrans.png";
-import appLogoLight from "public/images/VouchLogoTrans.png";
+import appLogo from "public/images/appLogo.svg";
+import appLogoLight from "public/images/appLogo.svg";
 import { useEffect, useMemo, useState } from "react";
 import {
   setNoticeDrawerOpen,

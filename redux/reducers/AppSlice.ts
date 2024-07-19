@@ -50,7 +50,7 @@ export interface AppState {
 }
 
 const initialState: AppState = {
-  darkMode: false,
+  darkMode: true,
   collapseOpenId: undefined,
   updateFlag: 0,
   unreadNoticeFlag: false,
