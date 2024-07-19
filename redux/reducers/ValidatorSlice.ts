@@ -491,8 +491,8 @@ export const claimValidatorRewards =
       const claimParams = [
         ipfsRewardItem.index,
         ipfsRewardItem.address,
-        formatScientificNumber(Number(ipfsRewardItem.totalRewardAmount)),
-        formatScientificNumber(Number(ipfsRewardItem.totalExitDepositAmount)),
+        ipfsRewardItem.totalRewardAmount,
+        ipfsRewardItem.totalExitDepositAmount,
         formatProofs,
         ValidatorClaimType.ClaimReward,
       ];
