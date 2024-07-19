@@ -431,7 +431,7 @@ const ConnectButton = () => {
     dispatch(setNoticeDrawerOpen(false));
     dispatch(setSettingsDrawerOpen(false));
 
-    const metamaskConnector = connectors.find((c) => c.name === "MetaMask");
+    const metamaskConnector = connectors.find((c) => c.name === "MetaMask" || c.name === "Rabby Wallet");
     if (!metamaskConnector) {
       return;
     }
