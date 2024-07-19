@@ -10,7 +10,7 @@
   },
   "supportRestApi": true,
   "apr": 8.1,
-  "validatorTotalDepositAmount": 12000000,
+  "validatorTotalDepositAmount": 32000000,
   "trustValidatorDepositAmount": 1000000,
   "detailedInfo": {},
   "faqList": [
