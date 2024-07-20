@@ -1,36 +1,36 @@
-import { metaMask } from "connectors/metaMask";
-import dayjs from "dayjs";
-import { useEffect } from "react";
+import { metaMask } from 'connectors/metaMask';
+import dayjs from 'dayjs';
+import { useEffect } from 'react';
 import {
   setDarkMode,
   setUnreadNoticeFlag,
   setUpdateFlag,
-} from "redux/reducers/AppSlice";
+} from 'redux/reducers/AppSlice';
 import {
   updateEthBalance,
   updateEthLatestBlockTimestamp,
-} from "redux/reducers/EthSlice";
-import { updateApr } from "redux/reducers/LsdEthSlice";
+} from 'redux/reducers/EthSlice';
+import { updateApr } from 'redux/reducers/LsdEthSlice';
 import {
   updateNodePubkeys,
   updateValidatorWithdrawalCredentials,
-} from "redux/reducers/ValidatorSlice";
+} from 'redux/reducers/ValidatorSlice';
 import {
   setMetaMaskAccount,
   setMetaMaskChainId,
   setMetaMaskDisconnected,
-} from "redux/reducers/WalletSlice";
+} from 'redux/reducers/WalletSlice';
 import {
   STORAGE_KEY_DARK_MODE,
   STORAGE_KEY_DISCONNECT_METAMASK,
   STORAGE_KEY_UNREAD_NOTICE,
   getStorage,
-} from "utils/storageUtils";
-import { useAccount, useChainId } from "wagmi";
-import { useAppDispatch } from "./common";
-import { useAppSlice } from "./selector";
-import { useInterval } from "./useInterval";
-import { useWalletAccount } from "./useWalletAccount";
+} from 'utils/storageUtils';
+import { useAccount, useChainId } from 'wagmi';
+import { useAppDispatch } from './common';
+import { useAppSlice } from './selector';
+import { useInterval } from './useInterval';
+import { useWalletAccount } from './useWalletAccount';
 
 declare const window: { ethereum: any };
 declare const ethereum: any;
@@ -52,7 +52,8 @@ export function useInit() {
     dispatch(
       setMetaMaskDisconnected(!!getStorage(STORAGE_KEY_DISCONNECT_METAMASK))
     );
-    dispatch(setDarkMode(!!getStorage(STORAGE_KEY_DARK_MODE)));
+    const darkMode = JSON.parse(getStorage(STORAGE_KEY_DARK_MODE) || 'false');
+    dispatch(setDarkMode(darkMode));
   }, [dispatch]);
 
   useEffect(() => {
@@ -79,7 +80,7 @@ export function useInit() {
   }, [dispatch, metaMaskAccount]);
 
   useEffect(() => {
-    dispatch(setMetaMaskChainId(chainId + ""));
+    dispatch(setMetaMaskChainId(chainId + ''));
   }, [dispatch, chainId]);
 
   // Update wallet balances.
@@ -96,6 +97,6 @@ export function useInit() {
 
   // Change body backgroundColor
   useEffect(() => {
-    document.body.style.backgroundColor = darkMode ? "#222C3C" : "#E8EFFD";
+    document.body.style.backgroundColor = darkMode ? '#222C3C' : '#E8EFFD';
   }, [darkMode]);
 }
