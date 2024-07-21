@@ -6,7 +6,7 @@
     "lsdTokenName": "vPLS",
     "lsdTokenIconUri": "https://cdn.stafi.io/rtoken/logo/rPLS.png",
     "tokenIcon": "/images/token/PLS.svg",
-    "lsdTokenIcon": "/images/token/rPLS.svg"
+    "lsdTokenIcon": "/images/token/vPLS.svg"
   },
   "supportRestApi": true,
   "apr": 8.1,
