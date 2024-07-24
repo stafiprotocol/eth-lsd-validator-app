@@ -19,7 +19,7 @@
       "contents": [
         {
           "type": "text",
-          "content": "Staking rewards in the StaFi protocol are influenced by various factors including the total amount of native tokens staked and redeemed, the staking rewards earned, slash occurrences, penalties, and the commission ratio. Slashing events, caused by disconnection or malicious behavior of validator nodes, could potentially reduce rewards; however, StaFi mitigates this risk by diversifying the staking funds across multiple validators with clean records and requiring them to provide additional deposits as collaterals. The staking reward claim status and the timing of claims on the original chain can also affect staking rewards.\n"
+          "content": "Staking rewards in the Vouch protocol are influenced by various factors including the total amount of native tokens staked and redeemed, the staking rewards earned, slash occurrences, penalties, and the commission ratio. Slashing events, caused by disconnection or malicious behavior of validator nodes, could potentially reduce rewards; however, Vouch mitigates this risk by diversifying the staking funds across multiple validators with clean records and requiring them to provide additional deposits as collaterals. The staking reward claim status and the timing of claims on the original chain can also affect staking rewards.\n"
         },
         {
           "type": "text",
@@ -63,19 +63,19 @@
   "externalLinkList": [
     {
       "name": "Docs",
-      "link": "https://docs.stafi.io/"
+      "link": "https://app.vouch.run/"
     },
     {
       "name": "Website",
-      "link": "https://www.stafi.io/"
+      "link": "https://app.vouch.run/"
     },
     {
       "name": "DAO Forum",
-      "link": "https://dao.stafi.io/"
+      "link": "https://app.vouch.run/"
     },
     {
       "name": "Dune Dashboard",
-      "link": "https://dune.com/"
+      "link": "https://app.vouch.run/"
     }
   ],
   "contactList": [
@@ -93,7 +93,7 @@
     },
     {
       "type": "Telegram",
-      "link": "https://t.me/"
+      "link": "https://t.me/vouchrun"
     }
   ],
   "tokenPriceUrl": "https://api.coingecko.com/api/v3/simple/price?ids=pulsechain&vs_currencies=usd",
