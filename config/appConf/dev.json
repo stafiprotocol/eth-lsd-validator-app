@@ -11,19 +11,19 @@
   "blockSeconds": 10,
   "contracts": {
     "lsdTokenContract": {
-      "address": "0x21072f1Fe1f8B2b0d88ea2cba9209Ad955262b70"
+      "address": "0x61135c59a4eb452b89963188ed6b6a7487049764"
     },
     "depositContract": {
-      "address": "0x80C6840611C36B1656E4D36BcbA29F965d7043F9"
+      "address": "0x1b10731ec91267e9fd85c042a3a2961580837d1f"
     },
     "networkBalanceContract": {
-      "address": "0x5912ECE81449Dd83257F242A10B66b10981434E2"
+      "address": "0x47e97e7971d13936667ee0e0b44a4fc1ebd871ff"
     },
     "networkWithdrawContract": {
-      "address": "0x93564AEBDd016c9cF621e7366Ae7F9bFF554C08E"
+      "address": "0x555e33c8782a0cef14d2e9064598ce991f58bc74"
     },
     "nodeDepositContract": {
-      "address": "0xb23bd0A97D9823B176e97d29B20f1BA620c5a3B5"
+      "address": "0x190e0458a673b6868148e6a9e540c93363c7c24b"
     }
   },
   "lsdAppUrl": "https://test-pulse-lsd.stafi.io"
