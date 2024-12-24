@@ -84,7 +84,7 @@ export function useUnstakingPoolData() {
         });
 
       setWaitingStakers(
-        Number(nextWithdrawIndex) - Number(maxClaimableWithdrawIndex) + ""
+        Number(nextWithdrawIndex) - Number(maxClaimableWithdrawIndex) - 1 + ""
       );
     } catch (err: any) {
       console.log({ err });
